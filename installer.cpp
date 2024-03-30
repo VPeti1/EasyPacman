@@ -67,11 +67,12 @@ int main() {
     std::cout << "By VPeti" << std::endl;
     sleep(2);
     dw();
-    std::cout << "The next few operations can cause damage to your system! Proceed at your own risk!\n";
+    //std::cout << "The next few operations can cause damage to your system! Proceed at your own risk!\n";
     pausecmd();
-    system("sudo mv /bin/pacman /bin/pacmanold");
+    //system("sudo mv /bin/pacman /bin/pacmanold");
     system("sudo wget https://raw.githubusercontent.com/VPeti1/EasyPacman/main/main.cpp -O /usr/easypacman/pm.cpp");
-    system("sudo g++ /usr/easypacman/pm.cpp -o /bin/pacman");
+    //system("sudo g++ /usr/easypacman/pm.cpp -o /bin/pacman");
+    system("sudo g++ /usr/easypacman/pm.cpp -o /bin/easypacman");
     system("sudo chmod +x /bin/pacman");
     std::cout << "EasyPacman Installer Completed!" << std::endl;
     system("exit");
